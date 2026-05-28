@@ -186,7 +186,7 @@
       if (jobDesc) formData.append('job_description', jobDesc);
 
       try {
-        const API = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://YOUR_RENDER_URL.onrender.com';
+        const API = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://resume-analyzer-api-i8kc.onrender.com';
         const res = await fetch(`${API}/analyze`, { method: 'POST', body: formData });
         const data = await res.json();
 
