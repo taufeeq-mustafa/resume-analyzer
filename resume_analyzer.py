@@ -18,12 +18,12 @@ import os
 import sys
 
 from dotenv import load_dotenv
-from liteparse import LiteParse
-
-load_dotenv()
 from google import genai
 from google.genai import types
+from liteparse import LiteParse
 from pydantic import BaseModel, Field
+
+load_dotenv()
 
 
 # ---------- Stage 1: parsing ----------
